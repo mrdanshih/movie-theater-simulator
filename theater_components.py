@@ -225,31 +225,3 @@ class Theater:
 
         else:
             return None
-
-
-if __name__ == '__main__':
-    my_clock = Clock()
-    my_theater = Theater(3, {1: 25, 2: 15, 3: 20}, 'M', my_clock)
-
-    my_customer = Customer()
-
-    for i in range(10):
-        log = my_theater.take_new_arrival(Customer())
-        print(log.get_formatted_log_message())
-
-    for sec in range(300):
-        num = random.randint(0, 100)
-
-        if num < 40 and sec < 100:
-            log = my_theater.take_new_arrival(Customer())
-            print(log.get_formatted_log_message())
-
-        events = my_theater.update_windows_and_lines()
-
-        for event in events:
-            print(event.get_formatted_log_message())
-
-        my_clock.increment()
-
-
-    print(my_theater)
