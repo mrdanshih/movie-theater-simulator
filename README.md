@@ -11,8 +11,8 @@ Those parameters will be described in an input file, a text file that specifies 
 the number of ticket windows, whether there is a single ticket line or a separate line for each window, and the speed at which customers are processed at each window. 
 In addition, the input file will contain a sequence of customer arrivals, specifying how many customers will arrive at the theater at which times. 
 
-
-Annotated simulation input file:
+Example simulation input file (annotated on the right):<br/>
+```
 Short simulation     brief description of the simulation
 5                    the length of the simulation, in minutes
 2                    the number of ticket windows
@@ -25,3 +25,4 @@ S                    how many lines: "S" for single, "M" for multiple
 1 60                 one customer arrives 60 seconds into the simulation
 1 90                 one customer arrives 90 seconds into the simulation
 END                  the "END" tag marks the end of the customer arrivals
+```
